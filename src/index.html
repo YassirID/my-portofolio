@@ -7,6 +7,50 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body>
+
+    <!-- Header Start -->
+     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-yss-green block py-6"> Yassir_ID</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 right-4 top-full bg-white shadow-lg rounded-lg max-w-[250px] w-full lg:block lg:static lg:max-w-full lg:shadow-none lg:bg-transparent lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Tentang Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#porfolio" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#clients" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Clients</a>
+                            </li>
+                            <li class="group">
+                                <a href="#blog" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Blog</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact" class="text-base text-yss-dark py-2 mx-8 flex group-hover:text-yss-green">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+     </header>
+    <!-- Header End -->
+
+
     <!-- Hero Section Start -->
      <section id="home" class="pt-36">
         <div class="container">
@@ -68,5 +112,8 @@
         </div>
      </section>
     <!-- About Section End -->
+
+
+    <script src="script.js"></script>
 </body>
 </html>
