@@ -33,3 +33,26 @@ document.addEventListener('click', function(event) {
         navMenu.classList.add('hidden');
     }
 });
+
+// darkmode toggle
+const darkToggle = document.querySelector('#dark-toggle');
+const html = document.querySelector('html');
+
+darkToggle.addEventListener('click', function() {
+    if (darkToggle.checked) {
+        html.classList.add('dark');
+        localStorage.theme = 'dark';
+    } else {
+        html.classList.remove('dark');
+        localStorage.theme = 'light';
+    }
+});
+
+// pindahkan posisi toggle ke posisi yang sesuai dengan tema saat ini
+if (localStorage.theme === 'dark') {
+    darkToggle.checked = true;
+    html.classList.add('dark');
+} else {
+    darkToggle.checked = false;
+    html.classList.remove('dark');
+}
